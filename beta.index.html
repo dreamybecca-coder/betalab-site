@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beta Lab | From Beta to Alpha</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 核心光效 */
+        .neon-text-blue { text-shadow: 0 0 10px rgba(59, 130, 246, 0.7), 0 0 20px rgba(59, 130, 246, 0.5); }
+        .bg-grid {
+            background-size: 40px 40px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+        }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans selection:bg-blue-500 selection:text-white">
+
+    <nav class="fixed w-full z-50 bg-gray-900/90 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold tracking-tighter text-white">BETA <span class="text-blue-500">LAB</span></span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#matrix" class="hover:text-blue-400 text-sm font-medium transition" data-i18n="nav_matrix">进化矩阵</a>
+                    <a href="#services" class="hover:text-blue-400 text-sm font-medium transition" data-i18n="nav_products">核心产品</a>
+                    <a href="#case" class="hover:text-blue-400 text-sm font-medium transition" data-i18n="nav_case">实战案例</a>
+                    <a href="#about" class="hover:text-blue-400 text-sm font-medium transition" data-i18n="nav_about">关于创始人</a>
+                    <button onclick="toggleLanguage()" class="flex items-center px-3 py-1 border border-gray-600 rounded text-xs font-bold hover:bg-gray-800 transition">
+                        <span id="lang-btn-text">EN</span>
+                    </button>
+                    <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium transition shadow-lg shadow-blue-500/30" data-i18n="nav_contact">立即咨询</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="absolute inset-0 bg-grid z-0"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent z-10"></div>
+        
+        <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            
+            <div class="mb-8 flex justify-center">
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-900/30 text-blue-400 border border-blue-500/30 tracking-widest uppercase" data-i18n="hero_slogan">
+                    From Beta to Alpha.
+                </span>
+            </div>
+
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
+                <span data-i18n="hero_title_1">让硬核技术</span> <br>
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-emerald-400 neon-text-blue" data-i18n="hero_title_2">听得懂，卖得动</span>
+            </h1>
+            
+            <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-400">
+                <span data-i18n="hero_desc_1">专为科技企业打造的“技术商业化”加速陪跑。</span><br>
+                <span data-i18n="hero_desc_2">融合“专家智慧 + AI 算力”，消除代码与商业的摩擦力。从 <span class="text-white font-bold">Beta</span> 态进化为 <span class="text-amber-400 font-bold">Alpha</span> 态。</span>
+            </p>
+
+            <div class="mt-10 flex justify-center gap-4 flex-col sm:flex-row">
+                <a href="#services" class="px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg transition shadow-[0_0_20px_rgba(37,99,235,0.5)]" data-i18n="btn_plan">
+                    查看 72h 突击方案
+                </a>
+                <a href="#matrix" class="px-8 py-3 border border-gray-700 text-base font-medium rounded-md text-gray-300 hover:bg-gray-800 md:py-4 md:text-lg transition" data-i18n="btn_method">
+                    了解方法论
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="matrix" class="py-20 bg-gray-900 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white mb-4" data-i18n="matrix_title">Beta-to-Alpha 商业进化矩阵</h2>
+                <p class="text-gray-400" data-i18n="matrix_subtitle">基于时间维度与价值维度的全周期解决方案</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+                <div class="bg-gray-800/50 p-8 rounded-2xl border border-gray-700 hover:border-orange-500/50 hover:shadow-[0_0_30px_rgba(249,115,22,0.15)] transition duration-300 group">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xs font-bold uppercase tracking-wider text-gray-500" data-i18n="q1_tag">Q1 • 瞬间引爆</span>
+                        <div class="h-8 w-8 rounded-full bg-orange-500/20 flex items-center justify-center text-orange-400">🚀</div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-orange-400 transition" data-i18n="q1_title">价值引爆 (Ignition)</h3>
+                    <p class="text-gray-400 text-sm mb-4" data-i18n="q1_desc">解决“融资难、听不懂”。将晦涩技术翻译为商业利益。</p>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✓</span> <span data-i18n="q1_p1">72h 技术价值翻译</span></li>
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✓</span> <span data-i18n="q1_p2">融资 Deck 逻辑重构</span></li>
+                    </ul>
+                </div>
+                <div class="bg-gray-800/50 p-8 rounded-2xl border border-gray-700 hover:border-purple-500/50 hover:shadow-[0_0_30px_rgba(168,85,247,0.15)] transition duration-300 group">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xs font-bold uppercase tracking-wider text-gray-500" data-i18n="q3_tag">Q3 • 持续动能</span>
+                        <div class="h-8 w-8 rounded-full bg-purple-500/20 flex items-center justify-center text-purple-400">☸️</div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-purple-400 transition" data-i18n="q3_title">增长飞轮 (Flywheel)</h3>
+                    <p class="text-gray-400 text-sm mb-4" data-i18n="q3_desc">解决“增长难、靠人推”。建立内容与生态的自动获客机制。</p>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li class="flex items-center"><span class="text-purple-500 mr-2">✓</span> <span data-i18n="q3_p1">思想领导力内容中台</span></li>
+                        <li class="flex items-center"><span class="text-purple-500 mr-2">✓</span> <span data-i18n="q3_p2">PLG 用户旅程设计</span></li>
+                    </ul>
+                </div>
+                <div class="bg-gray-800/50 p-8 rounded-2xl border border-gray-700 hover:border-cyan-500/50 hover:shadow-[0_0_30px_rgba(6,182,212,0.15)] transition duration-300 group">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xs font-bold uppercase tracking-wider text-gray-500" data-i18n="q2_tag">Q2 • 效能加速</span>
+                        <div class="h-8 w-8 rounded-full bg-cyan-500/20 flex items-center justify-center text-cyan-400">⚡</div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-cyan-400 transition" data-i18n="q2_title">效能加速 (Acceleration)</h3>
+                    <p class="text-gray-400 text-sm mb-4" data-i18n="q2_desc">解决“人效低、复制难”。用 AI 武装销售团队。</p>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li class="flex items-center"><span class="text-cyan-500 mr-2">✓</span> <span data-i18n="q2_p1">AI 销售副驾驶 (Copilot)</span></li>
+                        <li class="flex items-center"><span class="text-cyan-500 mr-2">✓</span> <span data-i18n="q2_p2">自动化获客 SOP</span></li>
+                    </ul>
+                </div>
+                <div class="bg-gray-800/50 p-8 rounded-2xl border border-gray-700 hover:border-amber-500/50 hover:shadow-[0_0_30px_rgba(245,158,11,0.15)] transition duration-300 group">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xs font-bold uppercase tracking-wider text-gray-500" data-i18n="q4_tag">Q4 • 护城河构建</span>
+                        <div class="h-8 w-8 rounded-full bg-amber-500/20 flex items-center justify-center text-amber-400">🛡️</div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-amber-400 transition" data-i18n="q4_title">护城河构建 (Moat)</h3>
+                    <p class="text-gray-400 text-sm mb-4" data-i18n="q4_desc">解决“壁垒低、易模仿”。战略沙盘推演与数据资产化。</p>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li class="flex items-center"><span class="text-amber-500 mr-2">✓</span> <span data-i18n="q4_p1">竞争壁垒沙盘推演</span></li>
+                        <li class="flex items-center"><span class="text-amber-500 mr-2">✓</span> <span data-i18n="q4_p2">数据资产变现策略</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 bg-gray-900 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                <div class="mb-10 lg:mb-0">
+                    <div class="inline-block px-4 py-1 rounded-full bg-blue-900/30 border border-blue-500/30 text-blue-400 text-sm font-semibold mb-6" data-i18n="service_badge">
+                        入门必选 • 72小时极速交付
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+                        <span data-i18n="service_title_1">技术价值翻译官</span> <br>
+                        <span class="text-gray-500">The 72h Tech-to-Value Decoder</span>
+                    </h2>
+                    <p class="text-gray-400 text-lg mb-8 leading-relaxed" data-i18n="service_desc">
+                        我们不谈虚的品牌理论，直接利用 4A 级洞察 + AI 算力，在 72 小时内，把你的 API 文档变成投资人眼中的“印钞机”。
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-green-500/20 rounded-full h-6 w-6 flex items-center justify-center mt-1"><span class="text-green-500 text-xs font-bold">1</span></div>
+                            <p class="ml-4 text-gray-300"><strong data-i18n="step1_title">去术语化：</strong><span data-i18n="step1_desc">把“P99延迟”翻译成“万亿交易零风险”。</span></p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-green-500/20 rounded-full h-6 w-6 flex items-center justify-center mt-1"><span class="text-green-500 text-xs font-bold">2</span></div>
+                            <p class="ml-4 text-gray-300"><strong data-i18n="step2_title">危机图谱：</strong><span data-i18n="step2_desc">可视化“如果不买你，客户会损失多少钱”。</span></p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-green-500/20 rounded-full h-6 w-6 flex items-center justify-center mt-1"><span class="text-green-500 text-xs font-bold">3</span></div>
+                            <p class="ml-4 text-gray-300"><strong data-i18n="step3_title">人话融资稿：</strong><span data-i18n="step3_desc">3分钟让红杉合伙人放下手机。</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="absolute -inset-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl blur-lg opacity-30 animate-pulse"></div>
+                    <div class="relative bg-gray-800 rounded-2xl border border-gray-700 p-6 shadow-2xl">
+                        <div class="font-mono text-sm text-gray-400">
+                            <p><span class="text-purple-400">input</span> = <span class="text-green-400">"Rust based Raft Consensus"</span></p>
+                            <p class="mt-2 text-gray-500"># Processing...</p>
+                            <p class="mt-4 text-white">Output: <span class="text-amber-400" data-i18n="code_output">"在A股高频交易中，我们的算法能帮你每秒多抢回 20% 的算力成本，且数据永不丢失。"</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="case" class="py-20 bg-gray-800 border-t border-gray-700 relative overflow-hidden">
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 bg-blue-600/10 rounded-full blur-3xl"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-12">
+                <span class="text-blue-400 font-bold tracking-widest text-sm uppercase">Success Story</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mt-2" data-i18n="case_title">从被投资人拒之门外，到 3 分钟拿下 Term Sheet</h2>
+                <p class="text-gray-400 mt-2" data-i18n="case_subtitle">匿名案例：某数据中间件独角兽的“价值翻译”之旅</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+                <div class="bg-red-900/10 border border-red-500/20 rounded-xl p-8 relative">
+                    <div class="absolute top-4 right-4 text-red-500 font-bold opacity-20 text-4xl">BEFORE</div>
+                    <h3 class="text-xl font-bold text-white mb-4" data-i18n="case_before_title">技术自嗨 (The Tech Trap)</h3>
+                    <p class="text-gray-400 italic mb-4" data-i18n="case_before_quote">"我们是基于 Rust 语言重构的云原生分布式中间件，支持 Raft 共识算法，实现了 P99 延迟低于 5ms..."</p>
+                    <div class="flex items-center text-red-400 text-sm">
+                        <span class="mr-2">❌</span> <span data-i18n="case_before_result">投资人反应：低头玩手机，质疑“缺乏商业壁垒”。</span>
+                    </div>
+                </div>
+                <div class="bg-green-900/10 border border-green-500/20 rounded-xl p-8 relative">
+                    <div class="absolute top-4 right-4 text-green-500 font-bold opacity-20 text-4xl">AFTER</div>
+                    <h3 class="text-xl font-bold text-white mb-4" data-i18n="case_after_title">商业印钞机 (The Money Printer)</h3>
+                    <p class="text-gray-300 italic mb-4" data-i18n="case_after_quote">"在万亿级的高频交易市场，秒级延迟就是巨额亏损。我们的方案能为您解决数据同步时效性，直接降低 20% 的算力成本。"</p>
+                    <div class="flex items-center text-green-400 text-sm">
+                        <span class="mr-2">✅</span> <span data-i18n="case_after_result">投资人反应：放下手机，记下“金融风控+降本增效”。</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-gray-900 relative">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <div class="text-blue-500/20 text-6xl leading-none mb-6">“</div>
+            
+            <h2 class="text-2xl md:text-4xl font-bold text-white leading-loose tracking-wider" data-i18n="hero_belief">
+                技术如果没有被听懂，就只是成本；<br>
+                只有被转化成商业价值，才是资产。
+            </h2>
+
+            <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-emerald-500 mx-auto mt-10 mb-6"></div>
+
+            <p class="text-gray-400 uppercase tracking-widest text-sm font-semibold">
+                Founder, Beta Lab
+            </p>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-gray-800/30 border-t border-gray-800">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-white mb-8" data-i18n="about_title">关于创始人</h2>
+            <div class="bg-gray-800 rounded-2xl p-8 border border-gray-700 shadow-xl">
+                <p class="text-xl text-gray-300 leading-relaxed italic mb-6" data-i18n="about_quote">
+                    "我既懂 MPF 和营销策略，也带过研发团队。跨界的洗礼，让我成了最懂你们的翻译官。"
+                </p>
+                <div class="flex justify-center items-center space-x-8 text-gray-500 text-sm font-semibold uppercase tracking-wider flex-wrap gap-y-4">
+                    <span>Ex-4A Strategy Director</span>
+                    <span class="text-blue-500 hidden sm:inline">•</span>
+                    <span>Tech Entrepreneur</span>
+                    <span class="text-blue-500 hidden sm:inline">•</span>
+                    <span>AI Practitioner</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-gradient-to-br from-gray-900 to-blue-900/20 border-t border-gray-800">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-white mb-6" data-i18n="cta_title">准备好进化了吗？</h2>
+            <p class="text-gray-400 mb-10" data-i18n="cta_desc">无需复杂的立项流程。把你的产品白皮书发给我，我们从“红队挑战”开始。</p>
+            <a href="mailto:contact@betalab.com" class="inline-flex items-center justify-center px-8 py-4 border border-transparent text-lg font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 shadow-lg shadow-blue-600/30 transition hover:scale-105" data-i18n="cta_btn">
+                开启 72h 挑战 (Email Me)
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 py-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 text-center text-gray-600 text-sm">
+            <p>&copy; 2025 Beta Lab. All rights reserved. Powered by Human Insight + AI.</p>
+        </div>
+    </footer>
+
+    <script>
+        const translations = {
+            zh: {
+                nav_matrix: "进化矩阵", nav_products: "核心产品", nav_case: "实战案例", nav_about: "关于创始人", nav_contact: "立即咨询",
+                hero_slogan: "From Beta to Alpha.",
+                hero_title_1: "让硬核技术", hero_title_2: "听得懂，卖得动",
+                // 优化点：更新中文翻译，体现商业化加速
+                hero_desc_1: "专为科技企业打造的“技术商业化”加速陪跑。",
+                hero_desc_2: "融合“专家智慧 + AI 算力”，消除代码与商业的摩擦力。从 <span class='text-white font-bold'>Beta</span> 态进化为 <span class='text-amber-400 font-bold'>Alpha</span> 态。",
+                btn_plan: "查看 72h 突击方案", btn_method: "了解方法论",
+                
+                matrix_title: "Beta-to-Alpha 商业进化矩阵", matrix_subtitle: "基于时间维度与价值维度的全周期解决方案",
+                q1_tag: "Q1 • 瞬间引爆", q1_title: "价值引爆 (Ignition)", q1_desc: "解决“融资难、听不懂”。将晦涩技术翻译为商业利益。", q1_p1: "72h 技术价值翻译", q1_p2: "融资 Deck 逻辑重构",
+                q3_tag: "Q3 • 持续动能", q3_title: "增长飞轮 (Flywheel)", q3_desc: "解决“增长难、靠人推”。建立内容与生态的自动获客机制。", q3_p1: "思想领导力内容中台", q3_p2: "PLG 用户旅程设计",
+                q2_tag: "Q2 • 效能加速", q2_title: "效能加速 (Acceleration)", q2_desc: "解决“人效低、复制难”。用 AI 武装销售团队。", q2_p1: "AI 销售副驾驶 (Copilot)", q2_p2: "自动化获客 SOP",
+                q4_tag: "Q4 • 护城河构建", q4_title: "护城河构建 (Moat)", q4_desc: "解决“壁垒低、易模仿”。战略沙盘推演与数据资产化。", q4_p1: "竞争壁垒沙盘推演", q4_p2: "数据资产变现策略",
+                
+                service_badge: "入门必选 • 72小时极速交付", service_title_1: "技术价值翻译官",
+                service_desc: "我们不谈虚的品牌理论，直接利用 4A 级洞察 + AI 算力，在 72 小时内，把你的 API 文档变成投资人眼中的“印钞机”。",
+                step1_title: "去术语化：", step1_desc: "把“P99延迟”翻译成“万亿交易零风险”。",
+                step2_title: "危机图谱：", step2_desc: "可视化“如果不买你，客户会损失多少钱”。",
+                step3_title: "人话融资稿：", step3_desc: "3分钟让红杉合伙人放下手机。",
+                code_output: "\"在A股高频交易中，我们的算法能帮你每秒多抢回 20% 的算力成本，且数据永不丢失。\"",
+                
+                case_title: "从被投资人拒之门外，到 3 分钟拿下 Term Sheet",
+                case_subtitle: "匿名案例：某数据中间件独角兽的“价值翻译”之旅",
+                case_before_title: "技术自嗨 (The Tech Trap)",
+                case_before_quote: "\"我们是基于 Rust 语言重构的云原生分布式中间件，支持 Raft 共识算法，实现了 P99 延迟低于 5ms...\"",
+                case_before_result: "投资人反应：低头玩手机，质疑“缺乏商业壁垒”。",
+                case_after_title: "商业印钞机 (The Money Printer)",
+                case_after_quote: "\"在万亿级的高频交易市场，秒级延迟就是巨额亏损。我们的方案能为您解决数据同步时效性，直接降低 20% 的算力成本。\"",
+                case_after_result: "投资人反应：放下手机，记下“金融风控+降本增效”。",
+
+                hero_belief: "技术如果没有被听懂，就只是成本；<br>只有被转化成商业价值，才是资产。",
+
+                about_title: "关于创始人",
+                about_quote: "\"我既懂 MPF 和营销策略，也带过研发团队。跨界的洗礼，让我成了最懂你们的翻译官。\"",
+                cta_title: "准备好进化了吗？", cta_desc: "无需复杂的立项流程。把你的产品白皮书发给我，我们从“红队挑战”开始。", cta_btn: "开启 72h 挑战 (Email Me)"
+            },
+            en: {
+                nav_matrix: "Evolution Matrix", nav_products: "Products", nav_case: "Case Study", nav_about: "Founder", nav_contact: "Contact",
+                hero_slogan: "From Beta to Alpha.",
+                hero_title_1: "Make Hard Tech", hero_title_2: "Understood & Sold",
+                // 优化点：更新英文翻译，体现 Commercialization Accelerator
+                hero_desc_1: "The Tech Commercialization Accelerator.",
+                hero_desc_2: "Blending Expert Wisdom + AI Power to eliminate friction between code & commerce. Evolve from <span class='text-white font-bold'>Beta</span> to <span class='text-amber-400 font-bold'>Alpha</span>.",
+                btn_plan: "View 72h Plan", btn_method: "Our Methodology",
+                
+                matrix_title: "Beta-to-Alpha Evolution Matrix", matrix_subtitle: "Full-cycle solutions based on Time & Value dimensions",
+                q1_tag: "Q1 • Ignition", q1_title: "Value Ignition", q1_desc: "Solve 'Hard to raise funds'. Translate obscure tech into commercial value.", q1_p1: "72h Tech Value Translation", q1_p2: "Pitch Deck Logic Restructuring",
+                q3_tag: "Q3 • Momentum", q3_title: "Growth Flywheel", q3_desc: "Solve 'Manual Sales'. Build automated content & ecosystem growth.", q3_p1: "Thought Leadership Hub", q3_p2: "PLG User Journey Design",
+                q2_tag: "Q2 • Acceleration", q2_title: "Efficiency Acceleration", q2_desc: "Solve 'Hard to scale'. Arm sales teams with AI tools.", q2_p1: "AI Sales Copilot", q2_p2: "Automated Lead Gen SOP",
+                q4_tag: "Q4 • Moat", q4_title: "Moat Construction", q4_desc: "Solve 'Easy to copy'. Strategic wargaming & data monetization.", q4_p1: "Competitive Wargaming", q4_p2: "Data Asset Monetization",
+                
+                service_badge: "Starter Pack • 72h Delivery", service_title_1: "Tech Value Translator",
+                service_desc: "Skip vague branding theories. We use 4A insights + AI power to turn your API docs into a 'money printer' narrative in 72 hours.",
+                step1_title: "De-jargon:", step1_desc: "Translate 'P99 Latency' to 'Zero Risk in Trillion $ Trades'.",
+                step2_title: "Crisis Map:", step2_desc: "Visualize 'How much money clients lose without you'.",
+                step3_title: "Human Pitch:", step3_desc: "Make investors put down their phones in 3 mins.",
+                code_output: "\"In high-frequency trading, our algo saves you 20% compute costs instantly, with zero data loss.\"",
+                
+                case_title: "From 'Investor Reject' to Term Sheet in 3 Mins",
+                case_subtitle: "Anonymous Case: The Value Translation of a Data Middleware Unicorn",
+                case_before_title: "The Tech Trap",
+                case_before_quote: "\"We are a cloud-native distributed middleware based on Rust, supporting Raft consensus, with P99 latency < 5ms...\"",
+                case_before_result: "Investor Reaction: Looking at phone, questioning 'Business Moat'.",
+                case_after_title: "The Money Printer",
+                case_after_quote: "\"In trillion-dollar high-frequency trading, latency means loss. We solve data sync, instantly saving you 20% in compute costs.\"",
+                case_after_result: "Investor Reaction: Phones down, taking notes on 'Risk Control + Efficiency'.",
+
+                hero_belief: "Tech not understood is just cost.<br>Tech translated into value is an asset.",
+
+                about_title: "About Founder",
+                about_quote: "\"I understand MPF strategy AND have led R&D teams. This crossover baptism makes me your best translator.\"",
+                cta_title: "Ready to Evolve?", cta_desc: "No complex processes. Send me your whitepaper, let's start the Red Team Challenge.", cta_btn: "Start 72h Challenge (Email Me)"
+            }
+        };
+
+        let currentLang = 'zh';
+        function toggleLanguage() {
+            currentLang = currentLang === 'zh' ? 'en' : 'zh';
+            document.getElementById('lang-btn-text').innerText = currentLang === 'zh' ? 'EN' : '中';
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (translations[currentLang][key]) {
+                    element.innerHTML = translations[currentLang][key];
+                }
+            });
+        }
+    </script>
+</body>
+</html>
